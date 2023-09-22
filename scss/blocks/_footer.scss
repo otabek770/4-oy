@@ -1,0 +1,49 @@
+.container-big {
+    background-color: #232340;
+}
+.footer {
+    &__menu {
+        // display: flex;
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            @media(max-width: 800px){
+                flex-direction: column;
+                gap: 30px;
+            }
+        }
+    }
+    &__item {
+        // display: flex;
+        &__title {
+            color: var(--Soft-Blue, #5468e7);
+
+            /* H3 */
+            font-family: Lexend Deca;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px; /* 125% */
+        }
+        &__text {
+            color: var(--Off-white, #f5f5f5);
+
+            /* Caption/Desktop */
+            font-family: Lexend Deca;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 23px; /* 164.286% */
+            letter-spacing: 0.14px;
+        }
+    }
+    &__btn{
+        color: white;
+        display: flex;
+width: 268px;
+padding: 11px 16px;
+justify-content: space-between;
+align-items: flex-start;
+background: var(--Dark-Blue, #232340);
+    }
+}

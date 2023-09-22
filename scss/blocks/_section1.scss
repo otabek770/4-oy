@@ -1,0 +1,52 @@
+.section1 {
+    margin-top: 50px;
+    display: flex;
+    // text-align: center;
+    justify-content: space-between;
+    @media(max-width: 744px){
+        flex-direction: column;
+    }
+    .salom {
+        background-color: aliceblue;
+    }
+    
+    &__card {
+        margin-top: 50px;
+        display: flex;
+        max-width: 460px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        &__title {
+            color: var(--Dark-Blue, #232340);
+
+            /* H1/Desktop */
+            font-family: "Lexend Deca";
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 64px; /* 128% */
+        }
+        &__text {
+            color: rgba(35, 35, 64, 0.9);
+
+            /* Paragraph/Desktop */
+            font-family: "Lexend Deca";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 27px; /* 150% */
+        }
+        a {
+            width: 200px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+    }
+    .bside {
+       img {
+        width: 100%;
+    } 
+    }
+}

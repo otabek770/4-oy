@@ -1,0 +1,115 @@
+.header {
+    .big-container {
+        background-image: url(../../img/bg\ img.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__menu {
+            display: flex;
+            gap: 50px;
+            // justify-content: space-between;
+        @media (max-width: 800px) {
+            display: none;
+        }
+
+            &__list {
+                display: flex;
+                gap: 50px;
+            }
+        }
+        &__btn {
+            color: white;
+            display: flex;
+            padding: 10px 44px;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            border-radius: 4px;
+            background: rgba(84, 104, 231, 0.5);
+        }
+        &__item {
+            display: flex;
+            a {
+                color: white;
+            }
+        }
+    }
+}
+.hero {
+    max-width:563px;
+    height: 301px;
+    margin: 252px 0;
+    @media (max-width: 744px) {
+        flex-direction: column;
+    }
+    &__title {
+        color: var(--Off-white, #f5f5f5);
+
+        /* H1/Desktop */
+        max-width: 563px;
+        font-family: "Lexend Deca";
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 64px; /* 128% */
+    }
+    &__text {
+        margin-top: 16px;
+        color: var(--Off-white, #f5f5f5);
+
+        /* Paragraph/Desktop */
+        max-width:397px;
+        font-family: "Lexend Deca";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px; /* 150% */
+    }
+    &__card {
+        gap: 16;
+        margin-top: 56px;
+        display: flex;
+        @media (max-width: 744px) {
+            flex-direction: column;
+        }
+        .card-btn {
+            display: flex;
+            padding: 10px 44px;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            border-radius: 4px;
+            background: var(--Soft-Blue, #5468e7);
+        }
+        .card-inp {
+            display: flex;
+            max-width: 298px;
+            padding: 11px 16px;
+            justify-content: space-between;
+            align-items: center;
+            align-self: stretch;
+            border-radius: 4px;
+            border: 2px solid var(--Grayish-Blue, #d1ecfd);
+            background: var(--Off-white, #f5f5f5);
+        }
+    }
+    &__card-input{
+        display: flex;
+    }
+}
+
+.toogle {
+    display: none;
+    @media (max-width: 744px){
+        display: block;
+    }
+    img {
+        width: 40px;
+        height: 40px;
+    }
+    
+}
